@@ -1,13 +1,39 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Downloader</title>
+  <style>
+    #loading {
+      display: none;
+      font-size: 22px;
+      font-weight: bold;
+      color: blue;
+    }
+    #error {
+      color: red;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    #output img {
+      width: 180px;
+      height: auto;
+      margin: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
 
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <h2>Download Images with Promise.all</h2>
 
-  <body>
-    <!-- the entire body must be written by student -->
-    <div id="output"></div>
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+  <button id="btn">Download Images</button>
+
+  <div id="loading">⏳ Loading Images...</div>
+  <div id="error"></div>
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
 </html>
